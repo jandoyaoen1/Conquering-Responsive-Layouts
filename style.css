@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+a {
+  font-family: "Oswald", serif;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0;
+  margin-inline: auto;
+}
+
+header {
+  background-color: #2e323f;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: clamp(0.8rem, 1.5vw, 1.125rem);
+  width: 100%;
+}
+
+.nav_item {
+  list-style: none;
+  margin: 0 0.3em;
+}
+.nav_list {
+  padding: 0;
+}
+
+.nav_link {
+  color: rgba(223, 223, 223, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav_link-button {
+  background-color: #a59678;
+  padding: 0.2em 1em;
+  border-radius: 100px;
+  color: #fff;
+}
+.nav_link:hover,
+.nav_link:focus {
+  opacity: 0.7;
+}
+.nav-visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.logo {
+  height: 30px;
+  color: red;
+}
+
+.hero {
+  background-color: #384050;
+  color: #fff;
+  padding: 2em 0;
+}
+.hero-shoutout {
+  font-size: clamp(3.5rem, 7.5vw, 5.625rem);
+  margin: 0 auto;
+  color: #a59678;
+  line-height: 0.95;
+  padding-bottom: 0.5em;
+}
+.accent {
+  color: #fff;
+}
+.hero-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding-bottom: 1em;
+  letter-spacing: 2px;
+}
+
+.hero-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #a59678;
+  padding: 0.2em 2em;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  opacity: 0.7;
+}
+
+.intro {
+  background-color: rgba(223, 223, 223, 0.7);
+  padding-bottom: 1em;
+}
+
+.intro-header-text {
+  margin: 0 auto;
+  text-transform: capitalize;
+  color: #a59678;
+  text-align: center;
+  font-size: clamp(1.3rem, 2.5vw, 1.875rem);
+  padding-top: 1em;
+}
+
+.intro-text {
+  font-size: clamp(0.7rem, 1.5vw, 1.125rem);
+  text-align: center;
+}
+.main-header-text {
+  color: #a59678;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.main-text {
+  font-size: clamp(0.9rem, 1.75vw, 1.3125rem);
+}
+.content-img {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+}
+
+.aside .row {
+  background-color: #384050;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+
+.aside-header-text {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1em;
+  font-size: clamp(1.3rem, 2.5vw, 1.875rem);
+}
+.aside-text {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(0.7rem, 1.5vw, 1.125rem);
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contacts {
+  background-color: #384050;
+}
+
+.bottom-header-text {
+  padding-top: 1em;
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.contact-header {
+  color: #a59678;
+  font-size: clamp(0.9rem, 1.75vw, 1.3125rem);
+  text-transform: capitalize;
+  margin: 0.5em 0;
+}
+
+.company-description {
+  color: rgba(223, 223, 223, 0.7);
+  font-size: clamp(0.6125rem, 1.4vw, 1rem);
+}
+
+.footer_link_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer_link_item {
+  width: max-content;
+}
+
+.footer_link {
+  color: rgba(223, 223, 223, 0.7);
+  text-decoration: none;
+  font-size: clamp(0.6125rem, 1.4vw, 1rem);
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer_link_item:hover,
+.footer_link_item:focus {
+  opacity: 0.7;
+}
+
+.last-link {
+  padding-bottom: 2em;
+}
+@media (min-width: 700px) {
+  header {
+    text-align: start;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    height: auto;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .nav_list {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+  }
+  .nav_list-primary {
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-column {
+    display: flex;
+    gap: 2em;
+  }
+}
+@media (min-width: 1000px) {
+  .hero {
+    height: 100vh;
+    padding-bottom: 3em;
+  }
+  .flex-hero {
+    display: flex;
+    gap: 2em;
+  }
+  .hero-shoutout {
+    padding: 0;
+  }
+  .column-text {
+    align-self: flex-end;
+  }
+  .main_content .container .flex-column {
+    display: block;
+  }
+  .main-flex {
+    display: flex;
+    gap: 2em;
+  }
+  .main-header-text {
+    margin-top: 0;
+  }
+  .main_content {
+    padding: 4em 0;
+  }
+  .main-flex-column1 {
+    width: 65%;
+  }
+
+  .main-flex-column2 {
+    width: 35%;
+  }
+  .bottom-header-text {
+    text-align: center;
+  }
+  .bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  .bottom-column-main {
+    width: 50%;
+  }
+}
